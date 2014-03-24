@@ -33,10 +33,10 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-group :test do
+group :test, :developement do
   gem 'rspec-rails'
-  gem 'webmock'
   gem 'factory_girl_rails', '~> 4.0'
+  gem 'webmock', require: false
 end
 
 group :developement do

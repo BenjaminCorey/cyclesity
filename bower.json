@@ -1,0 +1,27 @@
+{
+  "name": "cyclesity",
+  "version": "0.0.0",
+  "authors": [
+    "Benjamin Corey Wilkins <becowilk@gmail.com>"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "app/assets/bower_components",
+    "test",
+    "tests",
+    "spec",
+    "specs"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "lodash": "~2.4.1",
+    "backbone": "~1.1.2"
+  }
+}

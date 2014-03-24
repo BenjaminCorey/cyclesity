@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Cyclecity::Application.load_tasks
+Cyclesity::Application.load_tasks

@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Cyclecity::Application.config.secret_key_base = 'c223b8a34b40fbd5b171ea2e76912d58547852c9859ec6986356d41daa8a7a281d1ed758a8d9bb6f82dec039ecfd6264c8259641cadc9d1563aad41b047fadf2'
+Cyclesity::Application.config.secret_key_base = 'c223b8a34b40fbd5b171ea2e76912d58547852c9859ec6986356d41daa8a7a281d1ed758a8d9bb6f82dec039ecfd6264c8259641cadc9d1563aad41b047fadf2'

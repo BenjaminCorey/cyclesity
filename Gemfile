@@ -31,6 +31,14 @@ end
 
 group :test, :development do
   gem 'rspec-rails'
+  gem 'webmock'
+end
+
+group :developement do
+  gem 'zeus'
+  gem 'guard'
+  gem 'guard-livereload'
+  gem 'guard-rspec'
 end
 
 # Use ActiveModel has_secure_password

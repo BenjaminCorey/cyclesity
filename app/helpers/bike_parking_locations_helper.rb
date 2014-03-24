@@ -1,0 +1,2 @@
+module BikeParkingLocationsHelper
+end

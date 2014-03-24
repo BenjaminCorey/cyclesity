@@ -31,6 +31,9 @@ $ guard
 
 # Run the Javascript Test Suite
 $ karma start
+
+# Start the development server
+$ rails server
 ```
 
 ## Seeding the Database

@@ -1,7 +1,13 @@
 class BikeParkingLocationsController < ApplicationController
   respond_to :json
   def index
-    @bike_parking_locations = BikeParkingLocation.where(status: 'INSTALLED')
+    results = BikeParkingLocation.where(status: 'INSTALLED')
+
+    if params[:location]
+      results = results.near(params[:location])
+    end
+
+    @bike_parking_locations = results.limit(10)
     respond_with @bike_parking_locations
   end
 end

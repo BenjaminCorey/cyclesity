@@ -1,0 +1,1 @@
+json.array! @bike_parking_locations, partial: 'bike_parking_locations/bike_parking_location', as: :bike_parking_location

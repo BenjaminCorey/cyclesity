@@ -11,7 +11,13 @@
 // about supported directives.
 //
 //= require jquery/dist/jquery
-//= require lodash/lodash
+//= require lodash/dist/lodash
 //= require backbone/backbone
 //= require main
+//= require _shared
+//= require_tree ../templates
+//= require_tree ./models
+//= require_tree ./collections
+//= require_tree ./views
+//= require_tree ./routers
 //= require_tree .

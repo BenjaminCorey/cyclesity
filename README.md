@@ -1,4 +1,4 @@
-# Cyclecity
+# Cyclesity
 Find Bike Parking in San Francisco
 
 ## Getting Started
@@ -14,10 +14,14 @@ Find Bike Parking in San Francisco
 git clone git@github.com:BenjaminCorey/cyclesity.git
 cd cyclesity
 
+# install ruby dependencies
 bundle install
+# install frontend dependencies
 bower install
 
-rake db:create # you may have to edit the database.yml to use your Postgres credentials
+# created the database
+# you may have to edit the database.yml to use your Postgres credentials
+rake db:create
 
 rake db:migrate
 rake db:test:prepare

@@ -38,6 +38,7 @@ class App.Views.FormView extends App.View
     , 300
 
   renderAutocomplete: (results) =>
+    @unrenderAutocomplete()
     $list = $("<ul class='autocomplete-list' />")
     _(results).each (result, index) =>
       $list.append("<li class='autocomplete-list-item'>#{result.description}</li>")

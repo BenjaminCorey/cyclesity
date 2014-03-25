@@ -1,5 +1,8 @@
 # Cyclesity
-Find Bike Parking in San Francisco
+## Find Bike Parking in San Francisco
+## Technical Track: Full Stack
+## Demo: [http://cyclesity.herokuapp.com/](http://cyclesity.herokuapp.com/)
+
 
 ## Getting Started
 

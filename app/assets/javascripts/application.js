@@ -12,7 +12,7 @@
 //
 //= require jquery/dist/jquery
 //= require lodash/dist/lodash
-//= require backbone/backbone
+//= require backbone/backbone.js
 //= require main
 //= require _shared
 //= require_tree ../templates

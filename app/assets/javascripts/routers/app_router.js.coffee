@@ -1,6 +1,8 @@
 class App.Routers.AppRouter extends Backbone.Router
   initialize: (options) ->
     {@$el} = options
+    App.form = new App.Views.FormView
+      el: @$el.find('#form')
     App.geolocator = new App.Geolocator()
     App.collection = new App.Collections.BikeParkingLocationCollection()
     App.collectionView = new App.Views.BikeParkingLocationCollectionView

@@ -27,9 +27,9 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'geocoder'
 
-gem 'eco'
-
 gem 'bourbon'
+
+gem 'httparty'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -39,9 +39,10 @@ end
 group :test, :developement do
   gem 'rspec-rails'
   gem 'factory_girl_rails', '~> 4.0'
-  gem 'webmock', require: false
 end
-
+group :test do
+  gem 'webmock'
+end
 group :developement do
   gem 'zeus'
   gem 'guard'

@@ -1,2 +1,0 @@
-<h3><%= if @name isnt '_undetermined' then @name else @address %></h3>
-<p><%= @distance.toFixed(2) %> Miles</p>

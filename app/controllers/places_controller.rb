@@ -22,8 +22,8 @@ class PlacesController < ApplicationController
     private
 
     def query_remote_api(_params, url)
-        resp = %x{curl -G --data-urlencode #{_params.map{|k,v| "#{k}=\"#{v}\""}.join(" --data-urlencode ")} "#{url}"}
-        ActiveSupport::JSON.decode(resp)
+        response = HTTParty.get url, query: _params
+        JSON.parse(response.body)
     end
 
 end

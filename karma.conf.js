@@ -14,9 +14,10 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+      'https://maps.googleapis.com/maps/api/js?key=AIzaSyCxxIKK_7tBar9QwtAT5s5AHKBG2JnZeSQ&sensor=true',
       'http://localhost:3000/assets/application.js',
-      //'spec/javascripts/spec_helper.js.coffee',
-      //'spec/javascripts/main_spec.js.coffee',
+      'spec/javascripts/spec_helper.js.coffee',
+      'spec/javascripts/main_spec.js.coffee',
       'spec/javascripts/**/*.coffee',
       {
         pattern: 'app/assets/javascripts/**/*',

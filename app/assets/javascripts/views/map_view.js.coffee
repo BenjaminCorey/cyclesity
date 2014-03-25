@@ -1,12 +1,10 @@
-class App.Views.MapView
+class App.Views.MapView extends App.View
   markers: []
   center: new google.maps.LatLng(37.783, -122.416)
   zoom: 13
   disableDefaultUI: true
-  constructor: (options = {}) ->
-    _.extend @, Backbone.Events
-    {@$el} = options
-    @el = @$el[0]
+  initialize: ->
+    @el ||= document.createElement 'div'
     @map = new google.maps.Map(@el, @getMapOptions())
     @listenTo App, 'set:bike_parking_locations', @onSetBikeParkingLocations
     @listenTo App, 'set:bounding_coordinates', @onSetBoundingCoordinates
@@ -15,6 +13,7 @@ class App.Views.MapView
     @directionsService = new google.maps.DirectionsService()
     @directionsRenderer = new google.maps.DirectionsRenderer
     @directionsRenderer.setMap(@map)
+
   getMapOptions: =>
     {
       center: @center

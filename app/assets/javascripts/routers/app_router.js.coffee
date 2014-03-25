@@ -6,4 +6,4 @@ class App.Routers.AppRouter extends Backbone.Router
     App.geolocator = new App.Geolocator()
     App.collection = new App.Collections.BikeParkingLocationCollection()
     App.mapView = new App.Views.MapView
-      $el: @$el.find('#map')
+      el: @$el.find('#map')

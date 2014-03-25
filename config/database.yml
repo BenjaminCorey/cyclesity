@@ -19,7 +19,6 @@ development:
   encoding: unicode
   database: cyclesity_development
   pool: 5
-  username: Ben
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -47,13 +46,5 @@ test:
   adapter: postgresql
   encoding: unicode
   database: cyclesity_test
-  pool: 5
-  username: Ben
-  password:
-
-production:
-  adapter: postgresql
-  encoding: unicode
-  database: cyclesity_production
   pool: 5
   password:

@@ -19,12 +19,12 @@ namespace :cyclesity do
     mapped = results.map do |bike_parking_location|
       transform_data bike_parking_location
     end
-    
+
     puts "Seeding database..."
     mapped.each do |attributes|
       BikeParkingLocation.create! attributes
     end
-    
+
     puts "Success!"
   end
 
@@ -38,8 +38,8 @@ namespace :cyclesity do
   end
   def transform_data(data={})
     {
-      latitude: data["coordinates"]["latitude"].to_f,
-      longitude: data["coordinates"]["longitude"].to_f,
+      latitude: data["latitude"]["latitude"].to_f,
+      longitude: data["latitude"]["longitude"].to_f,
       name: data["location_name"],
       address: (data["yr_inst"] unless data["yr_inst"] == "None"),
       city: "San Francisco",
